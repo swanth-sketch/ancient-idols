@@ -1,0 +1,211 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.container {
+  display: flex;
+  height: 100vh;
+}
+.leftSidebar {
+  padding-top: 50px;
+  width: 30%;
+  height: auto;
+  background-color: #bccfd4;
+  align-items: flex-end;
+  /* color: rgb(33, 125, 205); */
+}
+.leftSidebar.closed {
+  width: 0;
+  overflow: hidden;
+}
+.rightSidebar {
+  width: 100%;
+  height: auto;
+  background-image: url(./utils/bgImage.jpg);
+  background-size: cover;
+}
+
+.rightSidebar.fullScreen {
+  width: 100vw;
+}
+.roundBtn1 {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(160, 167, 174);
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  justify-items: flex-start;
+  /* margin-top: 5px; */
+}
+.roundBtn2 {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(160, 167, 174);
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  justify-items: flex-start;
+  margin-right: 0px;
+  margin-top: 5px;
+}
+.heading {
+  margin-left: 0%;
+  font-size: 32px;
+  font-weight: 200;
+  text-align: left;
+  font-style: serif;
+}
+.headerContainer {
+  padding-left: 0%;
+  /* margin-left: 10px; */
+  justify-items: left;
+  margin-left: 10px;
+}
+.buttons {
+  display: flex;
+}
+.button {
+  margin-left: 0px;
+}
+.like-Btn {
+  width: 60px;
+  margin-left: 5px;
+}
+.share-Btn {
+  width: 60px;
+}
+.view-Btn {
+  width: 60px;
+}
+.squareBtn {
+  width: 38px;
+  height: 26px;
+  /* left: 22%; */
+  
+  position: absolute;
+  font-size: 19px;
+  cursor: pointer;
+  text-align: center;
+}
+.overlay-image {
+  background-image: url(./utils/idol.jpg);
+  position: absolute;
+  top: 25%;
+  left:55%;
+  
+  
+  
+}
+.idolCard {
+margin-left: 5px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 50;
+}
+@media (max-width: 600px) {
+  .roundBtn1 {
+    display: none;
+  }
+ 
+  .container {
+    flex-direction: column;
+  }
+  .leftSidebar {
+    width: 410px;
+    height: 250px;
+    padding-top: 20px;
+    display: none;
+  }
+  .rightSidebar {
+    width: 500px;
+    height: 150vh;
+    padding-top: 20px;
+    margin-left: 0px;
+    /* display: none; */
+  }
+  .squareBtn {
+    left: 0%;
+    width: 25px;
+    height: 2vh;
+    font-size: xx-small;
+    margin-top: 0%;
+  }
+  .headerContainer {
+    justify-items: center;
+  }
+  .heading {
+    font-size: small;
+  }
+}
+@media (max-width: 1280px) {
+  .roundBtn1 {
+    display: none;
+  }
+  
+  .container {
+    flex-direction: column;
+  }
+  .leftSidebar {
+    width: 410px;
+    height: 250px;
+    padding-top: 20px;
+    display: none;
+  }
+  .rightSidebar {
+    width: auto;
+    height: 150vh;
+    padding-top: 20px;
+    margin-left: 0px;
+    /* display: none; */
+  }
+  .squareBtn {
+    margin-left: 0px;
+    width: 25px;
+    height: 2vh;
+    font-size: xx-small;
+    margin-top: 0%;
+  }
+  .headerContainer {
+    justify-items: center;
+  }
+  .heading {
+    font-size: small;
+  }
+}
