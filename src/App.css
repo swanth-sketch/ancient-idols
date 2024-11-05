@@ -125,7 +125,7 @@
   text-align: center;
 }
 .overlay-image {
-  background-image: url(./utils/idol.jpg);
+  /* background-image: url(./utils/idol.jpg); */
   position: absolute;
   top: 25%;
   left:55%;
@@ -139,7 +139,7 @@ margin-left: 5px;
   font-size: 12px;
   font-weight: 50;
 }
-@media (max-width: 600px) {
+@media (max-width: 667px) {
   .roundBtn1 {
     display: none;
   }
@@ -159,6 +159,12 @@ margin-left: 5px;
     padding-top: 20px;
     margin-left: 0px;
     /* display: none; */
+  }
+  .overlay-image {
+  
+    position: absolute;
+    top: 25%;
+    left:55%;
   }
   .squareBtn {
     left: 0%;
@@ -194,6 +200,12 @@ margin-left: 5px;
     padding-top: 20px;
     margin-left: 0px;
     /* display: none; */
+  }
+  .overlay-image {
+  
+    position: absolute;
+    top: 25%;
+    left:45%;
   }
   .squareBtn {
     margin-left: 0px;
