@@ -1,3 +1,45 @@
+## Project Overview
+
+Project Name: Idol Interaction Interface
+Description: This project showcases an interactive UI where users can view, like, and share a Buddhist idol image. The interface includes toggleable sidebar functionality, with counts for views, likes, and shares.
+
+## Features
+Like, Share, and View Counts:Users can interact with the idol image by liking, sharing, and viewing it.
+Each action updates the respective counter displayed next to the button.
+Sidebar Toggle:
+
+A sidebar on the left shows interaction buttons and information.
+The sidebar can be opened or closed with a single button click, adapting the layout for mobile and desktop views.
+Responsive Design:
+
+Optimized layout for both mobile and desktop devices.
+A dedicated button for toggling the sidebar on mobile devices.
+State Management:
+
+Used React useState hooks to manage likes, shares, and views, as well as the sidebar's open/closed state
+
+## Components
+Body Component:Main component for layout and structure.
+Contains all interaction buttons, sidebars, and idol image.
+
+IdolCard Component:Displays the card with details about the idol.
+
+## Code Structure
+index.css: Styling for the layout and button animations.
+Body.js: Handles the main UI layout, states, and click events.
+idolCard.js: Idol details component displayed inside the left sidebar.
+idol.jpg: Sample idol image.
+
+## Functionality
+Like Button:Toggle between "liked" and "unliked" states, updating the like count.
+
+Share Button:Increments the share count upon each click.
+
+View Button:Counts each view and displays the total next to the button.
+
+Sidebar Toggle Button:Opens/closes the left sidebar, adapting to screen size.
+For mobile, a top-left square button allows easy toggling.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +110,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
