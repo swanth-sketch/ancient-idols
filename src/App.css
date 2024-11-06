@@ -51,11 +51,13 @@
 .leftSidebar.closed {
   width: 0;
   overflow: hidden;
+  transform: translateX(0);
 }
 .rightSidebar {
   width: 100%;
   height: auto;
   background-image: url(./utils/bgImage.jpg);
+  /* background-color: rgb(14, 13, 13); */
   background-size: cover;
 }
 
@@ -86,7 +88,7 @@
   margin-top: 5px;
 }
 .heading {
-  margin-left: 0%;
+  margin-left: 10px;
   font-size: 32px;
   font-weight: 200;
   text-align: left;
@@ -117,107 +119,114 @@
 .squareBtn {
   width: 38px;
   height: 26px;
-  /* left: 22%; */
-  
+  color: #b44f3d;
+  background-color: #a3b0b4;
   position: absolute;
   font-size: 19px;
   cursor: pointer;
   text-align: center;
+  border: none;
 }
 .overlay-image {
   /* background-image: url(./utils/idol.jpg); */
   position: absolute;
   top: 25%;
   left:55%;
+  width: 190px;
   
   
   
 }
+.readMoreBtn{
+  color: #b44f3d;
+border: none;
+background-color: transparent;
+cursor: pointer;
+font-weight: 200;
+font-size: small;
+font-family: serif;
+cursor: pointer;
+}
 .idolCard {
-margin-left: 5px;
+margin-left: 10px;
   text-align: left;
   font-size: 12px;
   font-weight: 50;
 }
-@media (max-width: 667px) {
-  .roundBtn1 {
-    display: none;
-  }
- 
-  .container {
-    flex-direction: column;
-  }
-  .leftSidebar {
-    width: 410px;
-    height: 250px;
-    padding-top: 20px;
-    display: none;
-  }
-  .rightSidebar {
-    width: 500px;
-    height: 150vh;
-    padding-top: 20px;
-    margin-left: 0px;
-    /* display: none; */
-  }
-  .overlay-image {
+.addBtn{
+  color: aliceblue;
+  cursor: pointer;
+  background-color: #b44f3d;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 5px;
+  margin-top: 15px;
   
-    position: absolute;
-    top: 25%;
-    left:55%;
+}
+.souvenirBtn{
+  background-color: aliceblue;
+  cursor: pointer;
+  color: #b44f3d;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-color: #b44f3d;
+}
+@media (max-width: 769px) {
+  .leftSidebar {
+    display: block;
+    width: 30%;
   }
-  .squareBtn {
-    left: 0%;
-    width: 25px;
-    height: 2vh;
-    font-size: xx-small;
-    margin-top: 0%;
-  }
-  .headerContainer {
-    justify-items: center;
-  }
-  .heading {
-    font-size: small;
+  .leftSidebar.closed{
+    .rightSidebar.squareBtn{
+      /* display: none; */
+    }
   }
 }
-@media (max-width: 1280px) {
-  .roundBtn1 {
-    display: none;
-  }
-  
-  .container {
-    flex-direction: column;
-  }
+
+@media (max-width: 768px) {
   .leftSidebar {
-    width: 410px;
-    height: 250px;
-    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 10;
+    width: 70%;
+    transform: translateX(-100%); /* Hide sidebar by default */
+    transition: transform 0.3s ease;
+  }
+
+  .leftSidebar.open {
+    transform: translateX(0);
+     /* Slide in sidebar when open */
+     width: 100%;
+    .squareBtn{
+  
+      top: 2%;
+      margin-left: 0px;
+      right: 50%;
+      /* display: none; */
+
+    }
+    .heading{
+      font-size: 12px;
+    }
+  }
+  
+
+  .squareBtn.mobile {
+    /* position: fixed; */
+    top: 10px;
+    left: 10px;
+    z-index: 15;
+  }
+  .roundBtn1{
     display: none;
   }
-  .rightSidebar {
-    width: auto;
-    height: 150vh;
-    padding-top: 20px;
-    margin-left: 0px;
-    /* display: none; */
-  }
-  .overlay-image {
   
+  .overlay-image{
     position: absolute;
-    top: 25%;
-    left:45%;
-  }
-  .squareBtn {
-    margin-left: 0px;
-    width: 25px;
-    height: 2vh;
-    font-size: xx-small;
-    margin-top: 0%;
-  }
-  .headerContainer {
-    justify-items: center;
-  }
-  .heading {
-    font-size: small;
+    top:30%;
+    width: 30%;
+    right:20%;
   }
 }
