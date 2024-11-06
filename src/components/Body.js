@@ -35,7 +35,7 @@ const Body = () => {
     <div className="container">
       <div className={`leftSidebar ${isSidebarOpen ? "open" : "closed"}`}>
         <div className="headerContainer">
-          <button className="roundBtn1">＞</button>
+          <button className="roundBtn1">≪</button>
 
           <button className="squareBtn" style ={{left: isSidebarOpen ? "22%":"1%"}} onClick={handleSidebarToggle}>
           {isSidebarOpen ? "≪" : "≫"} 
@@ -53,7 +53,7 @@ const Body = () => {
             <p>{likeCount}</p>
           </div>
           <div className="share-Btn" onClick={handleShareClick}>
-            <button className="roundBtn2"></button>
+            <button className="roundBtn2">➢</button>
             <p>{shareCount}</p>
           </div>
           <div className="view-Btn">
@@ -68,6 +68,9 @@ const Body = () => {
       <div className="rightSidebar">
         
           <img alt="" src={idolImage} className="overlay-image" style={{left: isSidebarOpen ? "55%" : "45%"  }}></img>
+          <button className="squareBtn mobile" onClick={handleSidebarToggle} style={{display:isSidebarOpen ? "none" : "block"}} >
+        {isSidebarOpen ? "≪" : "≫"}
+      </button>
         
       </div>
     </div>
